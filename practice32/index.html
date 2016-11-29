@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function find_middle(string){
+            if (string.length % 2 != 0){
+                var a = Math.floor(string.length/2)
+                return string[a]
+            }
+            var b = string.length/2
+            var c = (string.length/2)-1
+            return string[c] + string[b]
+        }
+        console.log(find_middle("blahh"))
+    </script>
+</head>
+<body>
+
+</body>
+</html>
