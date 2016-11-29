@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <script>
+        function sort_array(my_array){
+            var my_string_array = [];
+            var my_number_array  = [];
+            var my_boolean_array = [];
+            var my_new_array = [];
+            for( var i = 0; i < my_array.length; i++){
+                var my_array_index = my_array[i]
+                if (typeof my_array_index == "string"){
+                    my_string_array.push(my_array_index)
+                }else if (typeof my_array_index == "number"){
+                     my_number_array.push(my_array_index);
+                }else if (typeof my_array_index == "boolean"){
+                    my_boolean_array.push(my_array_index);
+                }
+            }my_new_array = my_string_array + " " +  my_number_array + " " + my_boolean_array
+            return my_new_array;
+        }
+        console.log(sort_array(["goodbye", 24, true, "yo", "hi", 55, false]));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
