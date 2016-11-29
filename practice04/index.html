@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var array1 = [8,6,1,56,2,3,244]
+        function bubble_sort(my_array) {
+            for (var i = my_array.length-1; i >= 0; i--) {
+                for (var j = 0; j < i; j++) {
+                    if (my_array[j] > my_array[j+1]) {
+                        var temp = my_array[j];
+                        my_array[j] = my_array[j+1]
+                        my_array[j+1]=temp;
+                    }
+                }
+            }
+        }
+        bubble_sort(array1);
+        console.log(array1);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
